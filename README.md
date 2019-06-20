@@ -5,59 +5,58 @@
 </p>
 
 ## Index 
-1. [Summary](https://github.com/ianjeffries/text-sentiment-analysis#summary)
-2. [File Directory](https://github.com/ianjeffries/text-sentiment-analysis#file-directory)
-3. [Language and Packages Used](https://github.com/ianjeffries/text-sentiment-analysis#language-and-packages-used)
-4. [Credits](https://github.com/ianjeffries/text-sentiment-analysis#credits)
-5. [License](https://github.com/ianjeffries/text-sentiment-analysis#license)
+1. [Summary](https://github.com/ianjeffries/car-accident-analysis#summary)
+2. [File Directory](https://github.com/ianjeffries/car-accident-analysis#file-directory)
+3. [Language and Packages Used](https://github.com/ianjeffries/car-accident-analysis#language-and-packages-used)
+4. [Installing Pyspark]
+4. [Credits](https://github.com/ianjeffries/car-accident-analysis#credits)
+5. [License](https://github.com/ianjeffries/car-accident-analysis#license)
 
 ## Summary 
-The following project utilizes R to mine sentiment from over 21,000 hotel reviews on resorts located in the Republic of Maldives, a South Asian country located in the Indian Ocean. 
+The following project uses python and pyspark to simulate how to use big data processing to analyze car crashes in the UK. The following notebook could be used in conjunction with databricks to process the data across a real cluster. 
 
 ## File Directory
 
-1. [**data**](https://github.com/ianjeffries/text-sentiment-analysis/tree/master/data) - contains the three files used in analysis:  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [maldives_hotel_reviews.csv](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/data/maldives_hotel_reviews.csv) - Hotel reviews of resorts in the Republic of Maldives.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [negative-lexicon.txt](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/data/negative-lexicon.txt) - Negative lexicon used to locate "negative" words.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [positive-lexicon.txt](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/data/positive-lexicon.txt) - Positive lexicon used to locate "positive" words.  
+1. [**data**](https://github.com/ianjeffries/car-accident-analysis/tree/master/data) - contains the four files used in analysis:  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [Acc.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Acc.csv) - 2017 accident data reported by the UK police force. 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [Cas.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Cas.csv) - 2017 casualty data reported by the UK police force.   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [Veh.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Veh.csv) - 2017 vehicle data reported by the UK police force.   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [dictionary.xls](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/dictionary.xls) - Data dictionary used to define coded categorical values within datasets.
      
-2. [**images**](https://github.com/ianjeffries/text-sentiment-analysis/tree/master/images) - contains vizualizations:  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [body_wordcloud.png](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/body_wordcloud.png) - Wordcloud showing commonly occuring words in the review body.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [header_wordcloud.PNG](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/header_wordcloud.PNG) - Wordcloud showing commonly occuring words in the review header.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [monthly_sentiment.png](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/monthly_sentiment.png) - Overall sentiment by month for all hotels in the Republic of Maldives.   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. [reviews_by_year.png](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/reviews_by_year.png) - Count of reviews by year.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e. [sentiment_comparison.png](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/sentiment_comparison.png) - Comparision of negative and positive wordcounts.   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f. [top_12_hotels.png](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/images/top_12_hotels.png) - Top 12 resorts sentiment comparison.   
+2. [**images**](https://github.com/ianjeffries/car-accident-analysis/tree/master/images) - contains vizualizations:  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [uk_accidents.png](https://github.com/ianjeffries/car-accident-analysis/blob/master/images/uk_accidents.png) - Heatmap showing accidents in the UK by accident severity.  
   
-3. [**text_mining.Rmd**](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/text_mining.Rmd) - R Markdown detailing the text mining process.  
-  
-4. [**text_mining.pdf**](https://github.com/ianjeffries/text-sentiment-analysis/blob/master/text_mining.pdf) - PDF that shows R code and the outputted results, for easy viewing.
-  
-5. [**results.pdf**](https://github.com/ianjeffries/hotel-review-text-mining/blob/master/results.pdf) - A full write-up comparing text mining in R vs SAS.
+3. [**car_crash.ipynb**](https://github.com/ianjeffries/car-accident-analysis/blob/master/car_crash.ipynb) - Jupyter Notebook containing all analysis performed on the datasets, along with vizualizations.  
 
 ## Language and Packages Used
 
-R is used for all model building - the results are compared in R vs SAS.
+Python is used in conjunction with Pyspark for all analysis performed. 
 
-The following packages are used:
+The following commands will import all necessary packages:
   
   ```
-#list of packages used
-packages <- c("tm", "wordcloud", "lubridate", "SnowballC", "ggplot2", "dplyr", "tidyr")
-
-#check to see if package is already installed
-for(p in packages){
-  if(!require(p, character.only = TRUE)) {
-    install.packages(p)
-    library(p, character.only = TRUE)
-  }
-}
+import pyspark, os, zipfile
+import pandas as pd
+import urllib.request
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+from pyspark.sql import SQLContext
+from pyspark import SparkContext
+from pyspark.sql.types import IntegerType
 ```
+
+## Installing Pyspark
+
+Pyspark takes special configuration to install and run within Jupyter Notebook. 
+
+1. To install on windows: Michael Galarnyk has an excellent [tutorial](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c) on installing PySpark for windows.
+
+2. If you are installing on Linux or Mac OS, Charles Bochet's [article](https://blog.sicara.com/get-started-pyspark-jupyter-guide-tutorial-ae2fe84f594f) will get you started.
 
 ## Credits
 
-1. Would like to thank Dr. Mo Saraee from the University of Salford for the maldives_hotel_reviews.csv dataset.
-2. Would like to thank Bing Liu and Minqing Hu for the negative-lexicon.txt and positive-lexicon.txt files, which were taken off of [their website](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon).
+1. Would like to thank the UK goverment for posting the data on [their website](https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data)  
+2. Would like to thank the [stackoverflow user](https://stackoverflow.com/questions/39699107/spark-rdd-to-dataframe-python) whose function I stole, because of you lot I get to stand on the shoulders of giants. 
 
 ## License 
 
