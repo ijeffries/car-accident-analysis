@@ -18,10 +18,10 @@ The following project uses Python and PySpark to simulate how to use big data pr
 ## File Directory
 
 1. [**data**](https://github.com/ianjeffries/car-accident-analysis/tree/master/data) - contains the four files used in analysis:  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [Acc.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Acc.csv) - 2017 accident data reported by the UK police force.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [Cas.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Cas.csv) - 2017 casualty data reported by the UK police force.   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [Veh.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Veh.csv) - 2017 vehicle data reported by the UK police force.   
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [dictionary.xls](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/dictionary.xls) - Data dictionary used to define coded categorical values within datasets.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [Acc.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Acc.csv) - 2017 accident data reported by the UK police force.  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [Cas.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Cas.csv) - 2017 casualty data reported by the UK police force.   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [Veh.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Veh.csv) - 2017 vehicle data reported by the UK police force.   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [dictionary.xls](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/dictionary.xls) - Data dictionary used to define coded categorical values within datasets.
      
 2. [**images**](https://github.com/ianjeffries/car-accident-analysis/tree/master/images) - contains vizualizations:  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [uk_accidents.png](https://github.com/ianjeffries/car-accident-analysis/blob/master/images/uk_accidents.png) - Heatmap showing accidents in the UK by accident severity.  
