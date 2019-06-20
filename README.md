@@ -8,7 +8,7 @@
 1. [Summary](https://github.com/ianjeffries/car-accident-analysis#summary)
 2. [File Directory](https://github.com/ianjeffries/car-accident-analysis#file-directory)
 3. [Language and Packages Used](https://github.com/ianjeffries/car-accident-analysis#language-and-packages-used)
-4. [Installing Pyspark]
+4. [Installing Pyspark](https://github.com/ianjeffries/car-accident-analysis#installing-pyspark)
 4. [Credits](https://github.com/ianjeffries/car-accident-analysis#credits)
 5. [License](https://github.com/ianjeffries/car-accident-analysis#license)
 
