@@ -13,7 +13,7 @@
 5. [License](https://github.com/ianjeffries/car-accident-analysis#license)
 
 ## Summary 
-The following project uses Python and PySpark to simulate how to use big data processing to analyze car crashes in the UK. The following notebook could be used in conjunction with databricks to process the data across a real cluster. 
+The following project uses Python and PySpark to simulate how to leverage big data processing to analyze car crashes in the UK. The attached Jupyter Notebook could be used in conjunction with databricks to process the data across a real cluster. 
 
 ## File Directory
 
@@ -55,7 +55,7 @@ PySpark takes special configuration to install and run within Jupyter Notebook:
 
 ## Credits
 
-1. Would like to thank the UK goverment for posting the data on [their website](https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data)  
+1. Would like to thank the UK goverment for posting the data on [their website](https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data).
 2. Would like to thank the [stackoverflow user](https://stackoverflow.com/questions/39699107/spark-rdd-to-dataframe-python) whose function I stole, because of you lot I get to stand on the shoulders of giants. 
 
 ## License 
