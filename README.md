@@ -8,12 +8,12 @@
 1. [Summary](https://github.com/ianjeffries/car-accident-analysis#summary)
 2. [File Directory](https://github.com/ianjeffries/car-accident-analysis#file-directory)
 3. [Language and Packages Used](https://github.com/ianjeffries/car-accident-analysis#language-and-packages-used)
-4. [Installing Pyspark](https://github.com/ianjeffries/car-accident-analysis#installing-pyspark)
+4. [Installing PySpark](https://github.com/ianjeffries/car-accident-analysis#installing-pyspark)
 4. [Credits](https://github.com/ianjeffries/car-accident-analysis#credits)
 5. [License](https://github.com/ianjeffries/car-accident-analysis#license)
 
 ## Summary 
-The following project uses python and pyspark to simulate how to use big data processing to analyze car crashes in the UK. The following notebook could be used in conjunction with databricks to process the data across a real cluster. 
+The following project uses Python and PySpark to simulate how to use big data processing to analyze car crashes in the UK. The following notebook could be used in conjunction with databricks to process the data across a real cluster. 
 
 ## File Directory
 
@@ -45,11 +45,11 @@ from pyspark import SparkContext
 from pyspark.sql.types import IntegerType
 ```
 
-## Installing Pyspark
+## Installing PySpark
 
-Pyspark takes special configuration to install and run within Jupyter Notebook. 
+PySpark takes special configuration to install and run within Jupyter Notebook: 
 
-1. To install on windows: Michael Galarnyk has an excellent [tutorial](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c) on installing PySpark for windows.
+1. If you're using windows, Michael Galarnyk has an excellent [tutorial](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c) on installing PySpark for windows.
 
 2. If you are installing on Linux or Mac OS, Charles Bochet's [article](https://blog.sicara.com/get-started-pyspark-jupyter-guide-tutorial-ae2fe84f594f) will get you started.
 
