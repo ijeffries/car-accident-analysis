@@ -23,10 +23,10 @@ The following project uses Python and PySpark to simulate how to leverage big da
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [Veh.csv](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/Veh.csv) - 2017 vehicle data reported by the UK police force.   
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. [dictionary.xls](https://github.com/ianjeffries/car-accident-analysis/blob/master/data/dictionary.xls) - Data dictionary used to define coded categorical values within datasets.
      
-2. [**images**](https://github.com/ianjeffries/car-accident-analysis/tree/master/images) - contains vizualizations:  
+2. [**images**](https://github.com/ianjeffries/car-accident-analysis/tree/master/images) - contains visualizations:  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [uk_accidents.png](https://github.com/ianjeffries/car-accident-analysis/blob/master/images/uk_accidents.png) - Heatmap showing accidents in the UK by accident severity.  
   
-3. [**car_crash.ipynb**](https://github.com/ianjeffries/car-accident-analysis/blob/master/car_crash.ipynb) - Jupyter Notebook containing all analysis performed on the datasets, along with vizualizations.  
+3. [**car_crash.ipynb**](https://github.com/ianjeffries/car-accident-analysis/blob/master/car_crash.ipynb) - Jupyter Notebook containing all analysis performed on the datasets, along with visualizations.  
 
 ## Language and Packages Used
 
